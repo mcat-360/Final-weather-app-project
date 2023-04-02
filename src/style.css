@@ -1,27 +1,11 @@
-/* Margin around the element */
-.box-1 {
-  margin: 10px;
-}
-
-/* Margin left only */
-.box-2 {
-  margin-left: 10px;
-}
-
-/* 10px margin on top and bottom, 5px on the sides */
-.box-3 {
-  margin: 10px 5px;
-}
-
-/* 20px margin top, 15px margin right, 10px margin bottom and 5px margin left */
-.box-4 {
-  margin: 20px 15px 10px 5px;
-}
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif,
     sans-serif;
   background: #7db6d4;
   color: #fff;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/074/856/original/air.jpg?1680465418");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -60,8 +44,25 @@ li:first-letter {
 .weather-app {
   padding: 20px;
   border: 1px solid #a8c9dc;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #a8c9dc;
+  box-shadow: rgba(65, 50, 100, 0.08) 0px 30px 50px 0px;
+}
+
+.box-1 {
+  margin: 10px;
+}
+
+.box-2 {
+  margin-left: 10px;
+}
+
+.box-3 {
+  margin: 10px 5px;
+}
+
+.box-4 {
+  margin: 20px 15px 10px 5px;
 }
 
 .overview {
@@ -120,4 +121,8 @@ li:first-letter {
 
 .d-flex weather-temperature {
   color: #fff;
+}
+
+.btn {
+  background-color: #1675eb;
 }
