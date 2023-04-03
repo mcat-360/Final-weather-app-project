@@ -101,17 +101,19 @@ function displayTemperature(response) {
 
 function convertToFahrenheit(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#changeClime");
+  let temperatureElement = document.querySelector("#temperature");
 
   temperatureElement.innerHTML = Math.round((celsiusTemperature * 9) / 5 + 32);
 }
 
 function convertToCelsius(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#changeClime");
+  let temperatureElement = document.querySelector("#temperature");
 
   temperatureElement.innerHTML = celsiusTemperature;
 }
+
+celsiusTemperature = Math.round(response.data.main.temp);
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", convertToFahrenheit);
