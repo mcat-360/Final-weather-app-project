@@ -122,3 +122,19 @@ li:first-letter {
 .btn {
   background-color: #1675eb;
 }
+
+.a {
+  color: #fff;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
