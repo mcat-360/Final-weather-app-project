@@ -177,6 +177,18 @@ form.addEventListener("submit", handleSubmit);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
+function showCurrentTemp(event) {
+  event.preventDefault();
+  navigator.geolocation.getCurrentPosition((position) => {
+    let lat = position.coords.latitude;
+    let lon = position.coords.longitude;
+    let apiKey = "4a4038e2f818fcb1a6d89b5c8709396";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&q=`;
+
+    axios.get(apiUrl).then(currentCity);
+  });
+}
+
 search("Zagreb");
 
 displayForecast();
