@@ -149,18 +149,6 @@ function displayTemperature(response) {
   getForecast(response.data.coord);
 }
 
-function search(city) {
-  let apiKey = "4a4038e2f818fcb1a6d89b5c87093961";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(displayTemperature);
-}
-
-function handleSubmit(event) {
-  event.preventDefault();
-  let cityInputElement = document.querySelector("#city-input");
-  search(cityInputElement.value);
-}
-
 function displayCelsiusTemperature(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
