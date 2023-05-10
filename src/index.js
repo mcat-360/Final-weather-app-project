@@ -68,7 +68,7 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  let apiKey = "4a4038e2f818fcb1a6d89b5c87093961";
+  let apiKey = "17ad6e67aa629189f73b053634668b20";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
@@ -170,5 +170,3 @@ function showCurrentTemp(event) {
 }
 
 search("Zagreb");
-
-displayForecast();
